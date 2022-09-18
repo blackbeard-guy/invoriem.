@@ -1,0 +1,319 @@
+@media (max-width: 1750px){
+
+    /* Case */
+
+    .case-studies{
+        margin-top: 124px;
+    }
+
+    .title{
+        font-size: 60px;
+        line-height: 74px;
+    }
+
+    .descr{
+        font-size: 24px;
+        line-height: 36px;
+        max-width: 800px;
+        margin: 12px 0 58px 0;
+    }
+
+    .container-right{
+        margin-left: 15px;
+        margin-bottom: 44px;
+    }
+
+    .slide{
+        height: auto;
+        width: 537px;
+    }
+
+    .slide-title{
+        font-size: 120px;
+        bottom: 54px;
+
+        /* Делаем градиент текста */
+        background: linear-gradient(90deg, rgba(17,68,85,1) 60px, rgba(255,255,255,1) 60px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slide-img{
+        padding-left: 60px;
+    }
+
+}
+
+@media (max-width: 1200px){
+
+    /* Header */
+
+    .header-descr{
+        padding-top: 126px;
+        max-width: 760px;
+    }
+    
+    .header-title{
+        font-size: 60px;
+        line-height: 74px;
+        max-width: 534px;
+        margin-bottom: 38px;
+    }
+    
+    .header-text{
+        font-size: 28px;
+        line-height: 32px;
+        margin-bottom: 52px;
+    }
+
+    /* Case */
+
+    .title{
+        font-size: 50px;
+        line-height: 64px;
+    }
+
+    .descr{
+        font-size: 20px;
+        line-height: 32px;
+        max-width: 660px;
+        margin: 12px 0 38px 0;
+    }
+
+    .container-right{
+        margin-left: 15px;
+        margin-bottom: 44px;
+    }
+
+    .slide{
+        height: auto;
+        width: 437px;
+    }
+
+    .slide-title{
+        font-size: 80px;
+        bottom: 44px;
+
+        /* Делаем градиент текста */
+        background: linear-gradient(90deg, rgba(17,68,85,1) 40px, rgba(255,255,255,1) 40px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slide-img{
+        padding-left: 40px;
+    }
+
+}
+
+@media (max-width: 640px){
+
+    .nav{
+        position: relative;
+    }
+
+    .burger{
+        display: inline;
+        position: absolute;
+        right: 15px;
+        top: 60px;
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .nav-mobile .nav-links{
+        display: flex;
+        flex-direction: column;
+        row-gap: 50px;
+        color: white;
+    }
+
+    .nav-mobile .nav-btn{
+        border-color: white;
+    }
+
+    .nav-btn::after{
+        background-image: url(./../img/arrow\ btn.svg);
+    }
+
+    .nav-mobile{
+        position: fixed;
+        flex-direction: column;
+        margin-left: -15px;
+        width: 100%;
+        height: 100%;
+        z-index: 12;
+        background-color: #114455;
+    }
+
+    .nav-mobile .nav-logo{
+        display: flex;
+        width: 50%;
+        margin-left: 25%;
+        justify-content: space-between;
+    }
+
+    .nav-mobile .nav-logo svg{
+        fill: #fff;
+    }
+
+    /* Header */
+
+    .header-descr{
+        padding-top: 126px;
+        max-width: 480px;
+    }
+    
+    .header-title{
+        font-size: 40px;
+        line-height: 54px;
+        max-width: 360px;
+        margin-bottom: 28px;
+    }
+    
+    .header-text{
+        font-size: 24px;
+        line-height: 30px;
+        margin-bottom: 32px;
+    }
+
+    a.header-btn{
+        margin-bottom: 200px;
+    }
+
+    /* Case */
+
+    .case-studies{
+        margin-top: 44px;
+    }
+
+    .title{
+        font-size: 40px;
+        line-height: 54px;
+    }
+
+    .descr{
+        font-size: 20px;
+        max-width: 480px;
+    }
+
+    .container-right{
+        margin-bottom: 34px;
+    }
+
+    .slide{
+        height: auto;
+        width: 380px;
+    }
+
+    .slide-title{
+        font-size: 60px;
+        bottom: 44px;
+
+        /* Делаем градиент текста */
+        background: linear-gradient(90deg, rgba(17,68,85,1) 34px, rgba(255,255,255,1) 34px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slide-img{
+        padding-left: 34px;
+    }
+
+     /* Footer */
+
+     .footer{
+        padding: 22px;
+    }
+    
+    .footer-row{
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+
+    .contacts{
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+    
+    /* About */
+
+    .about{
+        padding: 44px 0;
+        margin-bottom: 0;
+    }
+
+
+}
+
+@media (max-width: 480px){
+
+    /* Header */
+
+    .header-descr{
+        padding-top: 46px;
+        max-width: 320px;
+    }
+
+    a.header-btn{
+        margin-bottom: 200px;
+    }
+    
+    .header-title{
+        font-size: 30px;
+        line-height: 44px;
+        max-width: 280px;
+        margin-bottom: 32px;
+    }
+    
+    .header-text{
+        font-size: 20px;
+        line-height: 26px;
+        margin-bottom: 42px;
+    }
+
+    /* Case */
+
+    .title{
+        font-size: 30px;
+        line-height: 48px;
+    }
+
+    .descr{
+        font-size: 16px;
+        line-height: 22px;
+        max-width: 320px;
+        margin: 12px 0 28px 0;
+    }
+
+    .container-right{
+        margin-bottom: 34px;
+    }
+
+    .slide{
+        height: auto;
+        width: 280px;
+    }
+
+    .slide-title{
+        font-size: 50px;
+        bottom: 44px;
+
+        /* Делаем градиент текста */
+        background: linear-gradient(90deg, rgba(17,68,85,1) 30px, rgba(255,255,255,1) 30px);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+    }
+
+    .slide-img{
+        padding-left: 30px;
+    }
+}
+
+
+
+

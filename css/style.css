@@ -1,0 +1,386 @@
+@font-face {
+    font-family: 'Gilroy';
+    src: url('../Gilroy-Extrabold.woff') format('woff');
+    font-display: swap;
+    font-weight: 800;
+    font-style: normal;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans&display=swap');
+
+
+.no-scroll{
+    overflow-y: hidden;
+}
+
+.none{
+    display: none;
+}
+
+
+body{
+    overflow-x: hidden;
+}
+
+h1,
+h2,
+h3, 
+a{
+    font-family: 'Gilroy';
+}
+
+p,
+span{
+    font-family: 'Work Sans', sans-serif;
+}
+
+.container{
+    max-width: 1750px;
+    margin: auto;
+    padding: 0 15px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 56px 0;
+}
+
+.nav-links{
+    display: flex;
+    column-gap: 118px;
+    align-items: center;
+    font-family: 'Gilroy';
+    font-weight: 800;
+    color: #114455;
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.nav-btn{
+    position: relative;
+    display: flex;
+    padding: 10px 72px 10px 24px;
+    border: 1px solid #114455;
+    border-radius: 2px;
+    width: 197px;
+}
+
+.nav-btn:active, .nav-btn:hover{
+    background-color: #114455;
+    color: white;
+}
+
+.nav-btn:active:after, .nav-btn:hover::after{
+    background-image: url(./../img/arrow\ btn.svg);
+}
+
+.nav-btn:active{
+    position: relative;
+    top: 1px;
+}
+
+.nav-btn:hover::after{
+    background-image: url(./../img/arrow\ btn.svg);
+}
+
+.nav-btn::after{
+    position: absolute;
+    content: '';
+    background-image: url(./../img/arrow\ btn\ dark.svg);
+    width: 28px;
+    height: 16px;
+    right: 26px;
+    top: 20px;
+    color: "";
+}
+
+.nav-logo svg{
+    fill: #114455; 
+}
+
+/* Header */
+
+.header{ 
+    position: relative;
+    background-image: url(../img/header/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.header-descr{
+    padding-top: 126px;
+    max-width: 960px;
+    color: white;
+}
+
+.header-title{
+    font-size: 80px;
+    line-height: 94px;
+    color: #114455;
+    max-width: 734px;
+    margin-bottom: 48px;
+}
+
+.header-text{
+    font-size: 34px;
+    line-height: 40px;
+    color: #1F1F1F;
+    margin-bottom: 72px;
+}
+
+.header-btn{
+    position: relative;
+    margin-bottom: 386px;
+    background-color: #114455;
+    padding: 14px 80px 14px 32px;
+    color: white;
+    line-height: 32px;
+    font-size: 20px;
+    margin-right: 12px;
+}
+
+.header-btn::after{
+    position: absolute;
+    content: '';
+    background-image: url(./../img/arrow\ btn.svg);
+    width: 28px;
+    height: 16px;
+    right: 34px;
+    top: 24px;
+}
+
+.header::after{
+    content: '';
+    position: absolute;
+    background-image: url('./../img/arrow\ down.svg');
+    bottom: 39px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 38px;
+    height: 30px;
+}
+
+.header-btn:active, .header-btn:hover{
+    background-color: #8f8d8d;
+    color: #114455;
+}
+
+.header-btn:active:after, .header-btn:hover::after{
+    background-image: url(./../img/arrow\ btn\ dark.svg);
+}
+
+.header-btn:active{
+    position: relative;
+    top: 1px;
+}
+
+
+/* Case */
+
+.case-studies{
+    margin-top: 184px;
+}
+
+.title{
+    font-size: 80px;
+    line-height: 94px;
+    color: #1F1F1F;
+}
+
+.descr{
+    font-size: 28px;
+    line-height: 44px;
+    max-width: 1076px;
+    margin: 12px 0 78px 0;
+    color: rgba(31, 31, 31, 0.7);
+}
+
+.container-right{
+    margin-left: calc((100% - 1720px) / 2 + 20px);
+    margin-top: 22px;
+    margin-bottom: 74px;
+}
+
+.slide{
+    position: relative;
+    height: 760px;
+    width: 645px;
+}
+
+.slide-title{
+    position: absolute;
+    font-size: 140px;
+    left: 0;
+    bottom: 104px;
+
+    /* Делаем градиент текста */
+    background: linear-gradient(90deg, rgba(17,68,85,1) 80px, rgba(255,255,255,1) 80px);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.slide-img{
+    padding-left: 80px;
+}
+
+
+
+/* About */
+
+.about{
+    padding: 144px 0;
+    margin-bottom: 80px;
+}
+
+ .video{
+    position: relative;
+ }
+
+ .video-overlay::after{
+    content: "";
+    position: absolute;
+    z-index: 6;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(17, 68, 85, 0.5);
+ }
+
+ .video-btn{
+    position: absolute;
+    z-index: 9;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+ }
+
+ .video-preview{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 5;
+ }
+
+ .video-obj{
+    width: 100%;
+    vertical-align: top;
+ }
+
+
+ /* Footer */
+
+
+.footer{
+    padding: 82px 0;
+}
+
+.footer-text{
+    font-size: 20px;
+    line-height: 36px;
+    color: rgba(31, 31, 31, 0.7);
+    letter-spacing: 0.04em;
+}
+
+.footer-row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contacts{
+    display: flex;
+    align-items: center;
+    column-gap: 104px;
+}
+
+.social{
+    display: flex;
+    column-gap: 26px;
+}
+
+
+
+/* Burger */
+
+.burger{
+    /* Имитуирем паддинги для абсолютных значений
+    Задаем пермеенную, чтобы это значение всегда было одинаковым
+    Работает как в бургере, так и в его внутренностях - бурег-лайн */
+    --offset-horizontal: 6px;
+    --offset-vertical: 0px;
+    position: relative;
+    display: none;
+    background-color: transparent;
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    padding: var(--offset-vertical) var(--offset-horizontal);
+}
+
+.burger-line{
+    position: absolute;
+    background-color: #114455;
+    top: calc(var(--offset-vertical) + 0px);
+    /* строчные элементы не понимают что такое высота и ширина, если не задайти display: inline-block */
+    display: inline-block;
+    /* Делаем расчет ширины, взяв 100% отсноительно бургера и отняв 2 раза по переменной, которая является паддингом */
+    width: calc(100% - (var(--offset-horizontal)*2));
+    height: 4px;
+    border-radius: 9px;
+    /* Центрируем объект в абсолюте по центру. ХЗ как работает, но работает */
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+/* Обращаемся ко второму элементу и рассчитываеи отсуп, учитывая паддинг переменной + длину самой палочки + отсутп между 1-й и 2-й */
+.burger-line:nth-child(2){
+    top: calc(var(--offset-vertical) + 6px);
+}
+
+.burger-line:nth-child(3){
+    top: calc(var(--offset-vertical) + 12px);
+}
+
+/* Burger animation */
+
+#burger {
+    transform: rotate(0deg);
+    transition: .5s ease-in-out;
+    cursor: pointer;
+}
+#burger.open .burger-line {
+    display: block;
+    position: absolute;
+    height: 5px;
+    width: calc(100% - (var(--offset-horizontal)*2));
+    background: #fff;
+    border-radius: 9px;
+    opacity: 1;
+    left: 0;
+    transform: rotate(0deg);
+    transition: .25s ease-in-out;
+}
+#burger .burger-line:nth-child(1) {
+    top: 0px;
+}
+#burger .burger-line:nth-child(2) {
+    top: 12px;
+}
+#burger .burger-line:nth-child(3) {
+    top: 24px;
+}
+#burger.open .burger-line:nth-child(1) {
+    top: 18px;
+    transform: rotate(135deg);
+}
+#burger.open .burger-line:nth-child(2) {
+    opacity: 0;
+    left: -60px;
+}
+#burger.open .burger-line:nth-child(3) {
+    top: 18px;
+    transform: rotate(-135deg);
+}
